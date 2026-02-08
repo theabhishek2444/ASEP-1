@@ -1,0 +1,36 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Items | Smart Food Inventory</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="navbar">
+    <h1>🍱 Smart Food Inventory</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="add-item.html">Add Item</a>
+      <a href="donate.html">Donate</a>
+    </nav>
+  </header>
+
+  <main class="items-container">
+    <h2>📦 Your Food Inventory</h2>
+    <div id="itemsList" class="items-grid">
+      <p>Loading items...</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Smart Food Inventory | Built for ASEP1 - VIT Pune</p>
+  </footer>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+  <script src="firebase.js"></script>
+  <script src="view-items.js"></script>
+</body>
+</html>

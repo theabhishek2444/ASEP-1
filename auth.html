@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login / Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <h1>🌱 Smart Pantry</h1>
+    <nav>
+      <a href="index.html">Home</a>
+    </nav>
+  </header>
+
+  <section class="form-container">
+    <h2>Access Inventory</h2>
+    
+    <div id="loginSection">
+        <form id="loginForm">
+            <label>Email:</label>
+            <input type="email" id="loginEmail" required placeholder="Enter your email">
+            <label>Password:</label>
+            <input type="password" id="loginPassword" required placeholder="Enter your password">
+            <button type="submit" class="btn" style="width: 100%;">Login</button>
+        </form>
+        <p id="authStatus" style="margin-top: 15px; text-align:center; color: var(--primary);"></p>
+        <p style="text-align: center;">New here? <a href="#" id="showSignup" style="color: var(--primary);">Create an account</a></p>
+    </div>
+
+    <div id="signupSection" style="display: none;">
+        <form id="signupForm">
+            <label>Pantry / Hotel Name:</label>
+            <input type="text" id="pantryName" required placeholder="e.g. Grand Hotel Kitchen">
+
+            <label>Email:</label>
+            <input type="email" id="signupEmail" required placeholder="Enter your email">
+            <label>Password (6+ chars):</label>
+            <input type="password" id="signupPassword" required placeholder="Create a password">
+            <button type="submit" class="btn" style="width: 100%;">Sign Up</button>
+        </form>
+        <p id="signupStatus" style="margin-top: 15px; text-align:center; color: var(--primary);"></p>
+        <p style="text-align: center;">Already have an account? <a href="#" id="showLogin" style="color: var(--primary);">Log In</a></p>
+    </div>
+  </section>
+
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+  
+  <script src="firebase.js"></script>
+  <script src="auth.js"></script>
+</body>
+</html>

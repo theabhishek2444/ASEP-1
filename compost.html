@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compost Masterclass | Smart Pantry</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+    /* --- TIMELINE & CHART STYLES --- */
+    .timeline { border-left: 2px solid var(--primary); margin: 20px; padding-left: 20px; position: relative; }
+    .timeline-item { margin-bottom: 30px; position: relative; animation: slideUp 0.5s ease-out; }
+    .timeline-item::before { 
+        content: ''; position: absolute; left: -26px; top: 5px; 
+        width: 12px; height: 12px; background: var(--primary); border-radius: 50%; 
+        box-shadow: 0 0 15px var(--primary);
+    }
+    
+    .balance-box { display: flex; gap: 20px; margin-top: 20px; flex-wrap: wrap; }
+    .green-zone { flex: 1; border: 1px solid #4ade80; padding: 20px; border-radius: 20px; background: rgba(74, 222, 128, 0.05); min-width: 280px; }
+    .brown-zone { flex: 1; border: 1px solid #fbbf24; padding: 20px; border-radius: 20px; background: rgba(251, 191, 36, 0.05); min-width: 280px; }
+
+    /* --- VIDEO BUTTON STYLES (Fixed to ensure visibility) --- */
+    .video-link-container { 
+        margin-top: 15px; 
+        display: block; 
+        text-decoration: none; 
+        background: rgba(45, 212, 191, 0.15); /* Slightly brighter background */
+        padding: 15px; 
+        border-radius: 12px; 
+        text-align: center; 
+        color: #2dd4bf; /* Neon Teal Text */
+        font-weight: 700; 
+        border: 2px dashed #2dd4bf; 
+        transition: 0.3s; 
+        cursor: pointer;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .video-link-container:hover { 
+        background: #2dd4bf; 
+        color: #0f172a; /* Dark text on hover */
+        transform: scale(1.02);
+        box-shadow: 0 0 15px rgba(45, 212, 191, 0.6);
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <h1>🌱 Smart Pantry</h1>
+    <nav id="mainNav"></nav>
+  </header>
+
+  <div class="items-container">
+    
+    <section style="max-width: 900px; margin: 0 auto; text-align: center;">
+        <h2 style="color: var(--primary); font-size: 2.5rem;">The Science of Composting</h2>
+        <p style="color: var(--text-main); line-height: 1.8;">
+            Composting is the simple process of turning everyday organic waste—like vegetable peels, fruit scraps, tea leaves, and eggshells—into nutrient-rich compost that improves soil health and reduces landfill waste. Even a small pantry can try composting with minimal effort by using a compact container or bucket with a lid: add kitchen scraps in small pieces, balance them with dry waste such as paper towels or dried leaves to avoid smell, and stir the mix every few days for aeration. Keep it slightly moist (not wet), place it in a ventilated corner, and within a few weeks you’ll have dark, earthy compost ready for potted plants—proof that even a tiny space can close the loop on food waste instead of throwing it away.
+        </p>
+    </section>
+
+    <section style="margin-top: 60px;">
+        <h2 style="text-align: center;">⚖️ The 2:1 Ratio</h2>
+        <div class="balance-box">
+            <div class="green-zone">
+                <h3 style="color: #4ade80;">Greens (Nitrogen)</h3>
+                <ul>
+                    <li>🍎 Fruit Peels</li>
+                    <li>☕ Coffee Grounds</li>
+                    <li>🥬 Veggie Scraps</li>
+                </ul>
+            </div>
+            <div class="brown-zone">
+                <h3 style="color: #fbbf24;">Browns (Carbon)</h3>
+                <ul>
+                    <li>📦 Cardboard</li>
+                    <li>🍂 Dried Leaves</li>
+                    <li>🥚 Eggshells</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-container" style="max-width: 900px; margin-top: 50px; text-align: left; background: rgba(45, 212, 191, 0.05);">
+        <h3 style="color: var(--primary); font-size: 1.8rem; text-align: center;">📹 Tutorial Library</h3>
+        <p style="text-align: center; color: var(--text-muted); margin-bottom: 30px;">Choose the method that fits your hotel or cafe space.</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+            <div style="background: rgba(15, 23, 42, 0.6); padding: 25px; border-radius: 20px; border: 1px solid var(--glass-border);">
+                <h4 style="color: white; margin-top: 0;">Method A: Bokashi</h4>
+                <p style="font-size: 0.9rem; color: #94a3b8; min-height: 60px;">Anaerobic fermentation perfect for indoor kitchens. No smell, fast results.</p>
+                
+                <a href="https://youtu.be/0k3PTUnDHSI?si=Omue0V3IYu-1s8Yp" target="_blank" class="video-link-container">
+                   ▶️ Watch Bokashi Tutorial
+                </a>
+            </div>
+
+            <div style="background: rgba(15, 23, 42, 0.6); padding: 25px; border-radius: 20px; border: 1px solid var(--glass-border);">
+                <h4 style="color: white; margin-top: 0;">Method B: Vermicompost</h4>
+                <p style="font-size: 0.9rem; color: #94a3b8; min-height: 60px;">Using earthworms to break down organic matter into high-quality fertilizer.</p>
+                
+                <a href="https://youtu.be/ieAbk0VJbWk?si=hDFZqdtXwZkAFGbI" target="_blank" class="video-link-container">
+                   ▶️ Watch Vermi Tutorial
+                </a>
+            </div>
+        </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2026 Smart Food Inventory | VIT Pune</p>
+  </footer>
+
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+  <script src="firebase.js"></script>
+  <script src="auth.js"></script>
+  <script src="nav.js"></script>
+</body>
+</html>

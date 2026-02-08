@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Food Item</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <h1>🌱 Smart Pantry</h1>
+    <nav id="mainNav"></nav>
+  </header>
+
+  <div class="form-container">
+    <h2>Add New Item</h2>
+    <form id="foodForm">
+      <label>Food Name:</label>
+      <input type="text" id="foodName" placeholder="e.g., Milk, Bread" required>
+      
+      <label>Quantity:</label>
+      <input type="text" id="quantity" placeholder="e.g., 2 Liters, 1 Packet" required>
+      
+      <label>Expiry Date:</label>
+      <input type="date" id="expiryDate" required>
+      
+      <button type="submit" class="btn" style="width: 100%;">Add to Inventory</button>
+    </form>
+    <p id="statusMsg" style="margin-top: 15px; font-weight: 600; text-align:center; color: var(--primary);"></p>
+  </div>
+
+  <footer>
+    <p>© 2025 Smart Food Inventory | Built for ASEP1 - VIT Pune</p>
+  </footer>
+
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+  
+  <script src="firebase.js"></script>
+  <script src="auth.js"></script>
+  <script src="nav.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

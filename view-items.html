@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Inventory</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <h1>🌱 Smart Pantry</h1>
+    <nav id="mainNav"></nav> 
+  </header>
+
+  <div class="items-container">
+    
+    <div id="userProfileSection" class="profile-card" style="display: none;">
+        <div class="profile-info">
+            <h2 id="displayPantryName">Welcome!</h2>
+            <p id="displayLocation">📍 Detecting Location...</p>
+        </div>
+    </div>
+
+    <h2>Your Food Inventory</h2>
+    
+    <div id="itemsList" class="items-grid">
+      <p style="color: #94a3b8; font-size: 1.2rem;">⏳ Connecting to database...</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Smart Food Inventory | Built for ASEP1 - VIT Pune</p>
+  </footer>
+
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+  
+  <script src="firebase.js"></script>
+  <script src="auth.js"></script>
+  <script src="nav.js"></script>
+  <script src="view-items.js"></script>
+</body>
+</html>

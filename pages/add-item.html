@@ -1,0 +1,47 @@
+html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Food Item | Smart Food Inventory</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="navbar">
+    <h1>🍱 Smart Food Inventory</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="view-items.html">View Items</a>
+      <a href="donate.html">Donate</a>
+    </nav>
+  </header>
+
+  <main class="form-container">
+    <h2>Add New Food Item</h2>
+    <form id="foodForm">
+      <label>Item Name:</label>
+      <input type="text" id="foodName" placeholder="e.g. Rice, Bread" required>
+
+      <label>Quantity:</label>
+      <input type="number" id="quantity" placeholder="e.g. 5" required>
+
+      <label>Expiry Date:</label>
+      <input type="date" id="expiryDate" required>
+
+      <button type="submit" class="btn">Add Item</button>
+    </form>
+
+    <p id="statusMsg"></p>
+  </main>
+
+  <footer>
+    <p>© 2025 Smart Food Inventory | Built for ASEP1 - VIT Pune</p>
+  </footer>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+  <script src="firebase.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

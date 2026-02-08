@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">      
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+  
+  <title>Smart Food Inventory | Track. Save. Share.</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  
+</head>
+<body>
+  <header class="navbar">
+    <h1>🌱 Smart Inventory</h1>
+    <nav id="mainNav"></nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2 style="font-weight: 800;">Stop Waste.<br><span style="color: #2dd4bf;">Start Saving.</span></h2>
+      <p>A smart web-based system designed for hotels and cafés to manage inventory, reduce food waste, and support social welfare through donations.</p>
+      
+      <div style="margin-top: 30px; display: flex; gap: 15px; justify-content: center;">
+          <a href="auth.html" class="btn">🚀 Get Started</a>
+          <a href="compost.html" class="btn" style="background: rgba(255,255,255,0.1); color: white; border: 1px solid var(--primary);">🌿 Learn to Compost</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="items-container" style="padding-top: 0;">
+    <div class="items-grid" style="max-width: 1000px; margin: 0 auto;">
+      <div class="item-card" style="text-align: center;">
+        <div style="font-size: 2.5rem;">📊</div>
+        <h3>Track Inventory</h3>
+        <p>Monitor quantities and get automated alerts before food items expire.</p>
+      </div>
+      <div class="item-card" style="text-align: center;">
+        <div style="font-size: 2.5rem;">🤝</div>
+        <h3>Donate Surplus</h3>
+        <p>Identify safe edible food and connect with nearby NGOs and orphanages.</p>
+      </div>
+      <div class="item-card" style="text-align: center;">
+        <div style="font-size: 2.5rem;">♻️</div>
+        <h3>Eco-Disposal</h3>
+        <p>Transform non-donatable waste into compost to protect the environment.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Smart Food Inventory | Built for ASEP1 - VIT Pune </p>
+  </footer>
+
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+  
+  <script src="firebase.js"></script>
+  <script src="auth.js"></script>
+  <script src="nav.js"></script>
+</body>
+</html>

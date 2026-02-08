@@ -1,0 +1,48 @@
+<html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate Surplus Food</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+</head>
+<body>
+  <header class="navbar">
+    <h1>🌱 Smart food Inventory</h1>
+    <nav id="mainNav"></nav>
+  </header>
+
+  <div class="items-container">
+    <h2>🤝 Recommended for Donation</h2>
+    <p class="description">Items expiring in the next 7 days.</p>
+    
+    <div id="donationItemsList" class="items-grid">
+      <p style="color: #94a3b8;">Loading donation candidates...</p>
+    </div>
+
+    <h2 style="margin-top: 50px;">📍 Find Nearby Help</h2>
+    <p class="description">Your location vs. Nearby Donation Centers</p>
+    <div id="map"></div> 
+
+    <h2 style="margin-top: 30px;">🏠 Nearby Receiving Organizations</h2>
+    <div id="ngoDirectory" class="ngo-grid"></div>
+  </div>
+
+  <footer>
+    <p>© 2026 Smart Food Inventory | Built for ASEP1 - VIT Pune</p>
+  </footer>
+
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+  
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <script src="firebase.js"></script>
+  <script src="auth.js"></script>
+  <script src="nav.js"></script>
+  <script src="donate.js"></script>
+</body>
+</html>
